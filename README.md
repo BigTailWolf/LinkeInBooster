@@ -12,50 +12,38 @@ LinkedIn Booster 是一个浏览器扩展，旨在帮助用户更高效地提取
 flowchart TD
     subgraph 侧边栏
         direction TB
-        style 侧边栏 fill:#ffffff,stroke:#e1e4e8,stroke-width:2px
+        style 侧边栏 fill:#ffffff,stroke:#e1e4e8,stroke-width:2px,width:300px
         
-        subgraph 标题栏
-            direction LR
-            style 标题栏 fill:#f6f8fa,stroke:#e1e4e8,stroke-width:1px
-            title[LinkedIn Booster]
-            style title fill:#f6f8fa,stroke:none,color:#24292e,font-weight:bold
-        end
-        
-        subgraph 账户信息区
+        subgraph 账户信息
             direction TB
-            style 账户信息区 fill:#ffffff,stroke:#e1e4e8,stroke-width:1px
+            style 账户信息 fill:#f6f8fa,stroke:#e1e4e8,stroke-width:1px
             acc_title[账户信息]
-            style acc_title fill:#ffffff,stroke:none,color:#24292e,font-weight:500
-            acc_status[• 订阅状态]
-            acc_token[• Token 余额]
-            acc_date[• 下次扣款日期]
-            style acc_status fill:#ffffff,stroke:none,color:#586069
-            style acc_token fill:#ffffff,stroke:none,color:#586069
-            style acc_date fill:#ffffff,stroke:none,color:#586069
+            style acc_title fill:#f6f8fa,stroke:none,color:#24292e,font-weight:bold
+            acc_content[订阅状态: 活跃
+Token 余额: 1000
+下次扣款: 2024-04-01]
+            style acc_content fill:#f6f8fa,stroke:none,color:#586069
         end
         
-        subgraph 搜索结果区
+        subgraph 搜索结果
             direction TB
-            style 搜索结果区 fill:#ffffff,stroke:#e1e4e8,stroke-width:1px
-            search_title[搜索结果列表]
-            style search_title fill:#ffffff,stroke:none,color:#24292e,font-weight:500
-            cand1[• 候选人 1]
-            cand2[• 候选人 2]
-            cand3[• 候选人 3]
-            style cand1 fill:#ffffff,stroke:none,color:#586069
-            style cand2 fill:#ffffff,stroke:none,color:#586069
-            style cand3 fill:#ffffff,stroke:none,color:#586069
+            style 搜索结果 fill:#ffffff,stroke:#e1e4e8,stroke-width:1px
+            search_title[搜索结果]
+            style search_title fill:#ffffff,stroke:none,color:#24292e,font-weight:bold
+            search_content[已提取: 3 条
+待处理: 2 条
+已导出: 1 条]
+            style search_content fill:#ffffff,stroke:none,color:#586069
         end
         
-        subgraph AI分析区
+        subgraph AI分析
             direction TB
-            style AI分析区 fill:#ffffff,stroke:#e1e4e8,stroke-width:1px
-            ai_title[AI 分析区]
-            style ai_title fill:#ffffff,stroke:none,color:#24292e,font-weight:500
-            ai_eval[• 数据评估]
-            ai_suggest[• 智能建议]
-            style ai_eval fill:#ffffff,stroke:none,color:#586069
-            style ai_suggest fill:#ffffff,stroke:none,color:#586069
+            style AI分析 fill:#ffffff,stroke:#e1e4e8,stroke-width:1px
+            ai_title[AI 分析]
+            style ai_title fill:#ffffff,stroke:none,color:#24292e,font-weight:bold
+            ai_content[数据评估中...
+智能建议生成中...]
+            style ai_content fill:#ffffff,stroke:none,color:#586069
         end
     end
 ```

@@ -9,22 +9,54 @@ LinkedIn Booster 是一个浏览器扩展，旨在帮助用户更高效地提取
 ## 界面预览
 
 ```mermaid
-graph TD
-    subgraph 侧边栏界面
-        A[LinkedIn Booster] --> B[账户信息]
-        A --> C[搜索结果列表]
-        A --> D[AI 分析区]
+flowchart TD
+    subgraph 侧边栏
+        direction TB
+        style 侧边栏 fill:#ffffff,stroke:#e1e4e8,stroke-width:2px
         
-        B --> B1[订阅状态]
-        B --> B2[Token 余额]
-        B --> B3[下次扣款日期]
+        subgraph 标题栏
+            direction LR
+            style 标题栏 fill:#f6f8fa,stroke:#e1e4e8,stroke-width:1px
+            title[LinkedIn Booster]
+            style title fill:#f6f8fa,stroke:none,color:#24292e,font-weight:bold
+        end
         
-        C --> C1[候选人 1]
-        C --> C2[候选人 2]
-        C --> C3[候选人 3]
+        subgraph 账户信息区
+            direction TB
+            style 账户信息区 fill:#ffffff,stroke:#e1e4e8,stroke-width:1px
+            acc_title[账户信息]
+            style acc_title fill:#ffffff,stroke:none,color:#24292e,font-weight:500
+            acc_status[• 订阅状态]
+            acc_token[• Token 余额]
+            acc_date[• 下次扣款日期]
+            style acc_status fill:#ffffff,stroke:none,color:#586069
+            style acc_token fill:#ffffff,stroke:none,color:#586069
+            style acc_date fill:#ffffff,stroke:none,color:#586069
+        end
         
-        D --> D1[数据评估]
-        D --> D2[智能建议]
+        subgraph 搜索结果区
+            direction TB
+            style 搜索结果区 fill:#ffffff,stroke:#e1e4e8,stroke-width:1px
+            search_title[搜索结果列表]
+            style search_title fill:#ffffff,stroke:none,color:#24292e,font-weight:500
+            cand1[• 候选人 1]
+            cand2[• 候选人 2]
+            cand3[• 候选人 3]
+            style cand1 fill:#ffffff,stroke:none,color:#586069
+            style cand2 fill:#ffffff,stroke:none,color:#586069
+            style cand3 fill:#ffffff,stroke:none,color:#586069
+        end
+        
+        subgraph AI分析区
+            direction TB
+            style AI分析区 fill:#ffffff,stroke:#e1e4e8,stroke-width:1px
+            ai_title[AI 分析区]
+            style ai_title fill:#ffffff,stroke:none,color:#24292e,font-weight:500
+            ai_eval[• 数据评估]
+            ai_suggest[• 智能建议]
+            style ai_eval fill:#ffffff,stroke:none,color:#586069
+            style ai_suggest fill:#ffffff,stroke:none,color:#586069
+        end
     end
 ```
 
